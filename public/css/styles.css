@@ -1,0 +1,68 @@
+h1 {
+    color: #333333
+}
+
+/*class selector, using img would have applied style to all images*/
+.portrait {
+    width: 250px;
+    height: 250px;
+}
+/* margin: 0 is for top and bottom spacing, auto for left right
+    same is for padding 
+*/
+body {
+    color: #333333;
+    font-family: arial;
+    width: 250px;
+    margin: 0 auto;
+    padding : 0, 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+/* margin puts space between box and outside
+   padding puts space between box and its content
+*/
+footer {
+    color:  #888888;
+    border-top: 1px solid #eeeeee;
+    margin: 0 auto;
+    padding : 16px;
+    /*background-color: cadetblue;*/
+}
+
+header {
+    margin-top : 10px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px
+}
+
+/*targets only the links present inside header*/
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: #eeeeee;
+    padding: 8px;
+}
