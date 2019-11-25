@@ -2,18 +2,18 @@
 <html>
 
 <head>
-        <link rel="stylesheet" href="./css/styles.css">
+    <title>About</title>
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <title>{{title}}</title>
-    <header>
-        <a href="/">Weather</a>
-        <a href="/about">About</a>
-        <a href='/help'>Help</a>
-    </header>
-    <h1>{{pageName}}</h1>
-    <img class="portrait" src="/img/me.jpg">
-    <p>{{name}}</p>
+    <div class="main-content">
+        {{>header}}
+        <h1>{{pageName}}</h1>
+        <img class="portrait" src="/img/me.jpg">
+        <p>{{name}}</p>
+    </div>
+    {{>footer}}
 </body>
 
 </html>
